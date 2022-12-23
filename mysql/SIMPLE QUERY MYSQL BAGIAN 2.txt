@@ -1,0 +1,9 @@
+1. SELECT * FROM `obat` ORDER BY tgl_kadaluwarsa DESC
+2. SELECT * FROM `detail` ORDER BY tgl_transaksi ASC
+3. SELECT * FROM `dokter` WHERE alamat LIKE '%Padang%'
+4. SELECT * FROM `petugas` WHERE nm_petugas LIKE '%Refif%'
+5. SELECT id_pembeli, SUM(status) as total FROM T
+
+1. Buat 10 macam query yang bisa digunakan untuk table table pada apotek
+
+2. Tulis query nya ke dalam word, dan masukkan hasil screen shoot nya
