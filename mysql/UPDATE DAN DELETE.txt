@@ -1,0 +1,17 @@
+Tabel Petugas -> Menampilkan alamat dari Petugas
+SELECT alamat, SUM(nm_petugas) AS total FROM `petugas` GROUP BY alamat ORDER BY alamat DESC
+
+Tabel detai -> Update alamat dari pasien
+UPDATE detail SET nm_pasien = 'Viona', alm_pasien = 'Solok' WHERE id = '1'
+
+Tabel Transaksi -> Menghapus data transaksi
+SELECT * FROM `transaksi` WHERE id='1'
+
+Tabel Pembeli -> Menghapus Foreign Key id_obat pada tabel pembeli
+ALTER TABLE pembeli
+DROP FOREIGN KEY fk_obat;
+
+Tabel Pembeli -> Menjadikan idobat sebagai Foreign Key pada tabel pembeli
+ALTER TABLE pembeli
+ADD CONSTRAINT fk_obat
+FOREIGN KEY (idobat) REFERENCE obat(id);
